@@ -7,7 +7,6 @@ import torchaudio.transforms as T
 import os
 import io
 
-# Load the Silero VAD model globally
 # Load the Silero VAD model
 vad_model, utils = torch.hub.load(repo_or_dir='snakers4/silero-vad', model='silero_vad', force_reload=True)
 (get_speech_timestamps, _, read_audio, _, _) = utils
